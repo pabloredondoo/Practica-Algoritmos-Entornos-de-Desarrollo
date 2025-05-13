@@ -1,7 +1,7 @@
 public abstract class algoritmos {
-    
-    //Método Fibonacci
-    public static int fibonacci(int numero) {
+
+	// Método Fibonacci
+	public static int fibonacci(int numero) {
         if (numero < 0) {
             throw new IllegalArgumentException("El número debe ser mayor o igual que 0");
         }
@@ -23,7 +23,26 @@ public abstract class algoritmos {
 
        
         return siguiente;
-    }
-    
-}
+      //Método Factorial
+        public static long factorial(int numero) {
+            if (numero < 0) {
+                throw new IllegalArgumentException("El número debe ser mayor o igual que 0");
+            }
 
+
+            long resultado = 1;
+
+
+            for (int i = 2; i <= numero; i++) {
+                resultado *= i;
+            }
+
+
+            return resultado;
+        }
+
+
+
+    }
+
+}
