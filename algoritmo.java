@@ -45,4 +45,22 @@ public abstract class algoritmos {
 
     }
 
+	 //Método Primo
+    public static boolean primo(int numero) {
+        if (numero < 2) {
+            throw new IllegalArgumentException("El número debe ser mayor o igual que 2");
+        }
+
+
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+
+
+        return true;
+    }
+}
+
 }
